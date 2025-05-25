@@ -1,6 +1,6 @@
 setfpscap(3)
 wait(20)
-script_key = "MdnJbHRVYvcjnHluYsdvvbrZJHpURWMl";
+script_key="MdnJbHRVYvcjnHluYsdvvbrZJHpURWMl";
 getgenv().UserConfig = {
     AddFriends          = true,
     RedeemCode = {"RELEASE","Lucky", "update2","Easter","Sylentlyssorry", "update4"},
@@ -95,7 +95,7 @@ getgenv().UserConfig = {
 
     ["Webhook"] = {
         Enable = true,
-        Note = "1",
+        Note = "ok",
         ID = "876304731688038460",
         URL = "https://discord.com/api/webhooks/1376179936410468432/1vCKnl_GxgITFGc1p6B56qNTPBDElt40ydhE0xkH4RN3lqly_r7m2wy3HovLofQutAPG",
         Rarity = {
