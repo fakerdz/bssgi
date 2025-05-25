@@ -1,0 +1,109 @@
+setfpscap(3)
+wait(20)
+script_key = "MdnJbHRVYvcjnHluYsdvvbrZJHpURWMl";
+getgenv().UserConfig = {
+    AddFriends          = true,
+    RedeemCode = {"RELEASE","Lucky", "update2","Easter","Sylentlyssorry", "update4"},
+    EquipBestFlavorGum  = true,
+    BuyFlavorGum        = true,
+    AutoMinigames       = true,
+    AutoRollDice        = true,
+    ["Super Ticket"]    = "Robot Claw",
+    ["Use Super Ticket"] = true,
+    ["Season Challenges"] = false, -- false bc ss end 
+    ["Min gems"] = "1m",
+    ["Min tickets"] = "10b", -- Default if not set in UserConfig
+    ["Min coins"] = "5b", -- Default if not set in UserConfig
+    ["Giant Chest"] = false,
+    ["Void Chest"] = false,
+    ["Golden Chest"] = false,
+    ["Royal Chest"] = false,
+    ["Detector"] = {
+        Enable = true,
+        ["Name Needed"] = {"Avernus", "Patronus"},
+        ["Rarity Needed"] = {
+            "Legendary",
+            "Mythic",
+            "Secret"
+        }
+    },
+    ["Alien Shop"] = {
+        Enable = false,
+        ["Min Gems"] = "1m",
+        ["Items Needed"] = {
+            "Golden Key",
+            "Mystery Box",
+            "Coins III",
+            "Coins IV",
+            "Lucky III",
+            "Lucky IV",
+            "Speed III",
+            "Speed IV"
+        }
+    },
+    ["Black Market"] = {
+        Enable = false,
+        ["Min Gems"] = "1m",
+        ["Items Needed"] = {
+            "Lucky Evolved",
+            -- "Coins Evolved",
+            "Mythic Evolved",
+            "Speed Evolved",
+            "Lucky V",
+            -- "Coins V",
+            "Mythic V",
+            "Speed V"
+        }
+    },
+    ["Craft Potions"] = {
+        Enable = false,
+        MinGems = "100k",
+        ["Potion Needed"] = {
+            {"Coins", Level = 5},
+            {"Speed", Level = 5},
+            {"Lucky", Level = 5},
+            {"Mythic", Level = 5}
+        }
+    },
+    ["Mastery"] = {
+        Pets = 15,
+        Buffs = 8,
+        Shops = 0
+    },
+    ["Star Shop"] = {
+        Enable = true,
+        MinStars = 100,
+        ["Items Needed"] = {
+            "Speed V",
+            "Lucky V",
+            "Mythic V"
+        }
+    },
+    ["Rifts"] = {
+        AlwaysFindRifts = true,
+        Targets = {"Neon Egg","Chance Egg","Underworld Egg 3","Underworld Egg 2","Underworld Egg 1"},
+        Luck = 5 -- dont change
+    },
+    ["Secret Bounty"] = {"Prophet", "D0GGY1337", "Queen Kitty"}, -- delete pet name if you dont want that pet
+    FindDuck = "Chance Egg", -- Nightmare Egg, Common Egg, Cyber Egg, Neon Egg
+    ["Replace FindDuck"] = "Neon Egg",
+    ["Best Potions Find Duck"] = true, --false if there are only few potions 
+    ["Enchant Team 1"] = {enable = true, ["team-up"] = 1}, -- can set 2 or 3
+    ["Gems coefficient"] = 1,
+    ["Tickets coefficient"] = 490,
+    ["Auto Restart"] = true,
+
+    ["Webhook"] = {
+        Enable = true,
+        Note = "1",
+        ID = "876304731688038460",
+        URL = "https://discord.com/api/webhooks/1376179936410468432/1vCKnl_GxgITFGc1p6B56qNTPBDElt40ydhE0xkH4RN3lqly_r7m2wy3HovLofQutAPG",
+        Rarity = {
+            "Legendary",
+            "Secret"
+        }, -- General rarity filter
+        Legendary = "100m",
+        ["Special Pets"] = {"Avernus", "Patronus","Dementor","Jackpot","Luminosity"}
+    }
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/0cf205a620e81d1f3c3d3f75474ab32f.lua"))()
